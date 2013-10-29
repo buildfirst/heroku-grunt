@@ -18,7 +18,7 @@ Mostly, the buildpack lets us keep our Grunt dependencies in `devDependencies` l
 
 In this sample I'll just be running a JSHint task for simplicity's sake, but we _could use this same setup to compile Jade templates_, for example, and the files would still live in the environment.
 
-If you haven't done so in the previous example, [**ch04e05** Heroku Deployments](https://github.com/bevacqua/buildfirst/tree/master/ch04/05_heroku-deployments "Heroku Deployments"), you'll need to install the Heroku CLI and authenticate with it at this point, using `heroku login`.
+If you don't have an account on Heroku, the Toolbelt, haven't log on or didn't yet upload an RSA key, make sure to check out the previous example, [**ch04e05** Heroku Deployments](https://github.com/bevacqua/buildfirst/tree/master/ch04/05_heroku-deployments "Heroku Deployments"), you'll need to do those things to be able to follow through with this tutorial.
 
 ![heroku-auth.png][1]
 
