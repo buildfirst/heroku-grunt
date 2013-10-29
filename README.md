@@ -1,4 +1,4 @@
-# _Build First_, then Deploy to Heroku, then Build Again
+# _Build First_, Deploy to Heroku, Build Again
 
 Back in [**ch04e05** Heroku Deployments](https://github.com/bevacqua/buildfirst/tree/master/ch04/05_heroku-deployments "Heroku Deployments") we learned how to install, create, configure, and deploy to a environment hosted on the Heroku platform. We've left out a particularly important piece of information though.
 
