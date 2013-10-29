@@ -26,7 +26,18 @@ heroku create thing --buildpack https://github.com/mbuchetics/heroku-buildpack-n
 
 ![heroku-create-buildpack.png][2]
 
+Then, deploying will trigger a Grunt build, and if that fails then the deployment won't go through. These were taken _before correcting the linter_, to use the `"node"` profile.
 
+```shell
+git push heroku master
+```
+
+![heroku-deploy.png][3]
+![heroku-jshint.png][4]
+
+That's all that we need to do in order to run Grunt builds on Heroku!
 
   [1]: http://i.imgur.com/xKEeGDv.png "Authenticating with Heroku CLI"
   [2]: http://i.imgur.com/cxyvlBr.png "Creating an application with a buildpack"
+  [3]: http://i.imgur.com/KWABxcp.png "Deploying to Heroku"
+  [4]: http://i.imgur.com/6iU2wOq.png "Linting in Heroku"
