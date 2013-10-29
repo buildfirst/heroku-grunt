@@ -1,16 +1,16 @@
-# _Build First_, Deploy to Heroku, Build Again
+# _Build First_, Deploy, Build Again
 
 _This repository is part of the **Designing JavaScript Applications: A Build First Approach** book's code samples_, the full original for the code samples [can be found here](https://github.com/bevacqua/buildfirst). You can [learn more about the book itself here](http://bevacqua.io/buildfirst "Designing JavaScript Applications: A Build First Approach").
 
 This tutorial is part of the code samples accompanying the book [in _Chapter 4_](https://github.com/bevacqua/buildfirst/tree/master/ch04), about the release flow, deployments, and hosted application monitoring.
 
-Back in [**ch04e05** Heroku Deployments](https://github.com/bevacqua/buildfirst/tree/master/ch04/05_heroku-deployments "Heroku Deployments") we learned how to install, create, configure, and deploy to a environment hosted on the Heroku platform. We've left out a particularly important piece of information though.
+Back in [**ch04e05** Heroku Deployments](https://github.com/bevacqua/buildfirst/tree/master/ch04/05_heroku-deployments "Heroku Deployments") we learned how to install, create, configure, and deploy to a environment hosted on the Heroku platform. We've left out a particularly important piece of information though. How are we supposed to get a Grunt build on our Heroku environment?
 
 ### Heroku and Grunt Builds
 
-Where is the result of our Grunt build _supposed to go_? Should we check in build results to source control? Should we add a `grunt build` step to our **Procfile**? The answer lies in [Heroku Buildpacks](https://devcenter.heroku.com/articles/buildpacks), as explained in the book.
+Where is the result of our Grunt build _supposed to go_? Should we _check in_ build results to source control? Should we add a `grunt build` step to our **Procfile**? The answer lies in [Heroku Buildpacks](https://devcenter.heroku.com/articles/buildpacks), as explained [in the book](http://bevacqua.io/buildfirst "Designing JavaScript Applications: A Build First Approach").
 
-In this case, we can use the [heroku-buildpack-nodejs-grunt](https://github.com/heroku/heroku-buildpack-nodejs "mbuchetics/heroku-buildpack-nodejs-grunt on GitHub"), which helps us run Grunt builds on the Heroku platform.
+In this case, we will use the [heroku-buildpack-nodejs-grunt](https://github.com/heroku/heroku-buildpack-nodejs "mbuchetics/heroku-buildpack-nodejs-grunt on GitHub"), which helps us run Grunt builds on the Heroku platform. Buildpacks are glorified bundles of shell scripts which Heroku uses to as an interface to compile all sorts of applications.
 
 Mostly, the buildpack lets us keep our Grunt dependencies in `devDependencies` like we've been doing. We wouldn't be able to do this using the default Heroku build pack for Node.js, as it currently runs `npm install --production`, omitting the modules in `devDependencies`. We want to keep them in `devDependencies` because they're not really part of the running application, but merely a part of the build.
 
