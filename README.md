@@ -22,6 +22,8 @@ If you don't have an account on Heroku, the Toolbelt, haven't log on or didn't y
 
 ![heroku-auth.png][1]
 
+## Create the Heroku Application
+
 Next up we need to create a Heroku app, using the special buildpack we've been talking about.
 
 ```shell
@@ -30,14 +32,19 @@ heroku create thing --buildpack https://github.com/mbuchetics/heroku-buildpack-n
 
 ![heroku-create-buildpack.png][2]
 
-Then, deploying will trigger a Grunt build, and if that fails then the deployment won't go through. These were taken _before correcting the linter_, to use the `"node"` profile.
+## Deploying stays the same
 
 ```shell
 git push heroku master
 ```
 
 ![heroku-deploy.png][3]
+
+But suddenly, _**a wild Grunt build appears**_! The `heroku` Grunt task alias will be invoked. In this case, we've aliased it to `['jshint']`. These were taken _before setting options for the linter_, to use the `"node"` profile.
+
 ![heroku-jshint.png][4]
+
+Note that if the build fails, **the deployment won't go through**.
 
 That's all that we need to do in order to run Grunt builds on Heroku!
 
