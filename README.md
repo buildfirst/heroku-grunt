@@ -1,6 +1,6 @@
 # _Build First_, Deploy, Build Again
 
-_This repository is part of the **Designing JavaScript Applications: A Build First Approach** book's code samples_, the full original for the code samples [can be found here](https://github.com/bevacqua/buildfirst). You can [learn more about the book itself here](http://bevacqua.io/buildfirst "Designing JavaScript Applications: A Build First Approach").
+_This repository is part of the **Javascript Application Design: A Build First Approach** book's code samples_, the full original for the code samples [can be found here](https://github.com/bevacqua/buildfirst). You can [learn more about the book itself here](http://bevacqua.io/buildfirst "Javascript Application Design: A Build First Approach").
 
 This tutorial is part of the code samples accompanying the book [in _Chapter 4_](https://github.com/bevacqua/buildfirst/tree/master/ch04), about the release flow, deployments, and hosted application monitoring.
 
@@ -8,7 +8,7 @@ Back in [**ch04e05** Heroku Deployments](https://github.com/bevacqua/buildfirst/
 
 ### Heroku and Grunt Builds
 
-Where is the result of our Grunt build _supposed to go_? Should we _check in_ build results to source control? Should we add a `grunt build` step to our **Procfile**? The answer lies in [Heroku Buildpacks](https://devcenter.heroku.com/articles/buildpacks), as explained [in the book](http://bevacqua.io/buildfirst "Designing JavaScript Applications: A Build First Approach").
+Where is the result of our Grunt build _supposed to go_? Should we _check in_ build results to source control? Should we add a `grunt build` step to our **Procfile**? The answer lies in [Heroku Buildpacks](https://devcenter.heroku.com/articles/buildpacks), as explained [in the book](http://bevacqua.io/buildfirst "Javascript Application Design: A Build First Approach").
 
 In this case, we will use the [heroku-buildpack-nodejs-grunt](https://github.com/heroku/heroku-buildpack-nodejs "mbuchetics/heroku-buildpack-nodejs-grunt on GitHub"), which helps us run Grunt builds on the Heroku platform. Buildpacks are glorified bundles of shell scripts which Heroku uses to as an interface to compile all sorts of applications.
 
