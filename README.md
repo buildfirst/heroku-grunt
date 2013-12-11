@@ -1,5 +1,7 @@
 # _Build First_, Deploy, Build Again
 
+![heroku.jpg][5]
+
 _This repository is part of the **JavaScript Application Design: A Build First Approach** book's code samples_, the full original for the code samples [can be found here](https://github.com/bevacqua/buildfirst). You can [learn more about the book itself here](http://bevacqua.io/buildfirst "JavaScript Application Design: A Build First Approach").
 
 This tutorial is part of the code samples accompanying the book [in _Chapter 4_](https://github.com/bevacqua/buildfirst/tree/master/ch04), about the release flow, deployments, and hosted application monitoring.
@@ -52,3 +54,4 @@ That's all that we need to do in order to run Grunt builds on Heroku!
   [2]: http://i.imgur.com/cxyvlBr.png "Creating an application with a buildpack"
   [3]: http://i.imgur.com/KWABxcp.png "Deploying to Heroku"
   [4]: http://i.imgur.com/6iU2wOq.png "Linting in Heroku"
+  [5]: http://i.imgur.com/0IbfRuR.jpg "Heroku Platform"
