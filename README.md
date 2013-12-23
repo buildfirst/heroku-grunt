@@ -57,7 +57,7 @@ That's all that we need to do in order to run Grunt builds on Heroku!
   [5]: https://github.com/bevacqua/buildfirst/tree/master/ch04
   [6]: https://github.com/bevacqua/buildfirst/tree/master/ch04/05_heroku-deployments "Heroku Deployments"
   [7]: https://devcenter.heroku.com/articles/buildpacks
-  [8]: https://github.com/heroku/heroku-buildpack-nodejs "mbuchetics/heroku-buildpack-nodejs-grunt on GitHub"
+  [8]: https://github.com/mbuchetics/heroku-buildpack-nodejs-grunt "mbuchetics/heroku-buildpack-nodejs-grunt on GitHub"
   [9]: https://github.com/bevacqua/buildfirst/tree/master/ch04/05_heroku-deployments "Heroku Deployments"
   [10]: http://i.imgur.com/xKEeGDv.png "Authenticating with Heroku CLI"
   [11]: http://i.imgur.com/cxyvlBr.png "Creating an application with a buildpack"
